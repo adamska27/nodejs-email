@@ -54,6 +54,10 @@ app.post('/email', (req, res) => {
     res.json({ 'success': true });
 });
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the homepage');
+});
+
 app.listen(port, () => {
-    console.log('App is listening on port 3000 on dev mode');
+    console.log('App is running');
 });
