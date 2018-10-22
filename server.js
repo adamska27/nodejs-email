@@ -2,6 +2,7 @@
 require('dotenv').load();
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 const { send } = require('./mail');
 
@@ -53,6 +54,6 @@ app.post('/email', (req, res) => {
     res.json({ 'success': true });
 });
 
-app.listen(3000, () => {
-    console.log('App is listening on port 3000');
+app.listen(port, () => {
+    console.log('App is listening on port 3000 on dev mode');
 });

@@ -2,4 +2,6 @@
 .env
 # Dependency directories
 node_modules/
+npm-debug.log
+.DS_Store
 jspm_packages/
